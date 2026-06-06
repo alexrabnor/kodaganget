@@ -1,0 +1,80 @@
+{
+  "id": "showtell",
+  "order": 10,
+  "title": "Show & Tell",
+  "theme": {
+    "color": "#ff9f1c",
+    "accent": "#ffd23f",
+    "icon": "🎤",
+    "background": "stage",
+    "music": "showtell",
+    "atmosphere": "Scenen är din – visa upp och berätta!"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "Vad står förkortningen 'MVP' för i produkt- och projektsammanhang?",
+      "options": [
+        "Most Valuable Player",
+        "Minimum Viable Product",
+        "Multi Version Patch",
+        "Master Variable Path"
+      ],
+      "answer": 1,
+      "explanation": "MVP = Minimum Viable Product: den minsta version som ger värde och går att testa.",
+      "quip": "Rätt! Börja smått, lär dig snabbt."
+    },
+    {
+      "id": "q2",
+      "type": "true-false",
+      "prompt": "En bra demo fokuserar på att visa det som FUNGERAR snarare än att förklara all kod rad för rad.",
+      "answer": true,
+      "explanation": "Visa värdet och flödet – publiken vill se resultatet, inte hela kodbasen.",
+      "quip": "Sant – 'show', inte bara 'tell'."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "prompt": "Vad är ett bra första steg innan du visar din kod för andra via Git?",
+      "options": [
+        "Committa och pusha koden till ett repository.",
+        "Stänga av datorn.",
+        "Radera README-filen.",
+        "Byta programmeringsspråk."
+      ],
+      "answer": 0,
+      "explanation": "Commit + push gör koden tillgänglig och delbar för andra.",
+      "quip": "Rätt! Inget delat innan det är pushat."
+    },
+    {
+      "id": "q4",
+      "type": "match",
+      "prompt": "Matcha demo-begreppet med dess betydelse.",
+      "pairs": [
+        { "term": "MVP", "match": "Minsta användbara version" },
+        { "term": "README", "match": "Beskriver projektet" },
+        { "term": "Repo", "match": "Plats där koden bor" },
+        { "term": "Feedback", "match": "Återkoppling från andra" }
+      ],
+      "explanation": "Grundbegrepp för att dela och presentera ett projekt.",
+      "quip": "Allt rätt – redo för scenen!"
+    },
+    {
+      "id": "q5",
+      "type": "true-false",
+      "prompt": "Att öva sin presentation högt innan demon brukar göra den tydligare och lugnare.",
+      "answer": true,
+      "explanation": "Övning minskar nervositet och hjälper dig hålla en röd tråd.",
+      "quip": "Sant – proffs repeterar."
+    },
+    {
+      "id": "q6",
+      "type": "mini-challenge",
+      "prompt": "Vad heter filen man oftast skapar för att beskriva ett projekt på GitHub? (skriv filnamnet)",
+      "accept": ["README", "README.md", "readme", "readme.md"],
+      "explanation": "README.md är projektets ansikte utåt på GitHub.",
+      "quip": "Rätt! Första intrycket sitter i README."
+    }
+  ]
+}

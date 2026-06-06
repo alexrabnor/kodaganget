@@ -1,0 +1,99 @@
+{
+  "id": "hyff",
+  "order": 3,
+  "title": "Hyff – En modern tjänsteplattform",
+  "theme": {
+    "color": "#14b8a6",
+    "accent": "#a7f3d0",
+    "icon": "🛡️",
+    "background": "platform",
+    "music": "hyff",
+    "atmosphere": "En modern tjänsteplattform – allt snurrar i realtid."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "Varför är WebSockets (Socket) en viktig komponent i ett bokningssystem för tolkar?",
+      "options": [
+        "Det används för att kryptera databasen så att ingen kan läsa den.",
+        "Det möjliggör tvåvägskommunikation i realtid, vilket gör att akuta bokningar och statusändringar kan pushas ut direkt till användaren.",
+        "Det ersätter helt behovet av en traditionell backend.",
+        "Det är ett designverktyg för att rita logotyper till hemsidan."
+      ],
+      "answer": 1,
+      "explanation": "WebSockets ger tvåvägskommunikation i realtid – perfekt för att pusha akuta bokningar direkt.",
+      "quip": "Rätt! Realtid utan att trycka F5 hela tiden."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Vilken uppgift har en \"Middleware\" i det beskrivna kodflödet (Router → Middleware → Action)?",
+      "options": [
+        "Att formatera om hemsidans CSS-design för mobilskärmar.",
+        "Att agera dörrvakt och hantera funktioner som autentisering och datavalidering innan affärslogiken körs.",
+        "Att starta om servern om den kraschar.",
+        "Att skicka ett bekräftelse-SMS till tolken."
+      ],
+      "answer": 1,
+      "explanation": "Middleware är dörrvakten: autentisering, validering m.m. innan själva affärslogiken (Action) körs.",
+      "quip": "Korrekt – ingen släpps förbi utan giltig biljett."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "prompt": "Vad innebär det i praktiken att Tomas använder samma databas och kod till olika tolkplattformar?",
+      "options": [
+        "Att alla externa tolkar kan se alla kunders privata data oavsett plattform.",
+        "Att varje plattform kräver en helt unik programmerare som skriver unik kod.",
+        "Att systemet är byggt som en multi-tenant-arkitektur, vilket gör det enkelt att skala upp och uppdatera flera plattformar samtidigt från en och samma kodbas.",
+        "Att plattformarna bara kan användas av en person åt gången."
+      ],
+      "answer": 2,
+      "explanation": "Det är multi-tenant: en kodbas och databas betjänar flera plattformar – lätt att skala och uppdatera.",
+      "quip": "Rätt! En kodbas att styra dem alla."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "prompt": "Varför rekommenderas Docker vid utveckling och driftsättning av HYFF?",
+      "options": [
+        "Docker gör att systemet inte behöver internetuppkoppling för att fungera.",
+        "Det paketerar applikationen i containrar, vilket garanterar att koden körs identiskt på utvecklingsdatorn och på produktionsservern.",
+        "Det är ett programmeringsspråk som helt har ersatt C++ och JavaScript.",
+        "Det används specifikt för att automatiskt ringa upp tolkar via röstsamtal."
+      ],
+      "answer": 1,
+      "explanation": "Docker paketerar appen i containrar – 'funkar på min maskin' blir 'funkar överallt'.",
+      "quip": "Rätt! Containrar – kodens flyttlådor."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "prompt": "Hur har Claude använts i projektet enligt beskrivningen?",
+      "options": [
+        "Som en molnserver där databasen ligger lagrad.",
+        "Som en AI-assistent för att visa hur man bygger upp, strukturerar och kodar hemsidan (frontend).",
+        "Som ett operativsystem som ersätter Linux på servern.",
+        "Som ett bokningssystem för att manuellt schemalägga Tomas arbetstider."
+      ],
+      "answer": 1,
+      "explanation": "Claude användes som AI-assistent för att bygga, strukturera och koda frontend.",
+      "quip": "Korrekt – och ja, Claude tackar för förtroendet."
+    },
+    {
+      "id": "q6",
+      "type": "multiple-choice",
+      "prompt": "I vilken ordning flödar ett API-anrop logiskt genom backend-strukturen?",
+      "options": [
+        "Action → Middleware → Router",
+        "Middleware → Router → Action",
+        "Router → Middleware → Action",
+        "Router → Action → Middleware"
+      ],
+      "answer": 2,
+      "explanation": "Routern hittar rätt väg, middleware kollar/validerar, sedan körs Action.",
+      "quip": "Perfekt flöde! Inga buggar hittades."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "framtid",
+  "order": 11,
+  "title": "Framtid",
+  "theme": {
+    "color": "#5e60ce",
+    "accent": "#64dfdf",
+    "icon": "🚀",
+    "background": "cosmos",
+    "music": "framtid",
+    "atmosphere": "Rymden, AI och framtiden väntar bakom dörren."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "Vad står AGI för i AI-sammanhang?",
+      "options": [
+        "Artificial General Intelligence",
+        "Automatic Graphics Interface",
+        "Advanced Gaming Input",
+        "Annual Growth Index"
+      ],
+      "answer": 0,
+      "explanation": "AGI = Artificial General Intelligence: AI med bred, människolik förmåga – ännu inte uppnått.",
+      "quip": "Rätt! Framtidens stora fråga."
+    },
+    {
+      "id": "q2",
+      "type": "true-false",
+      "prompt": "Att fortsätta lära sig nytt är en av de viktigaste förmågorna inom tech, eftersom området förändras snabbt.",
+      "answer": true,
+      "explanation": "Livslångt lärande är kärnan – verktygen byts ut, nyfikenheten består.",
+      "quip": "Sant – du är ju här och spelar, eller hur?"
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "prompt": "Vilket av följande är ett växande område inom tekniken framåt?",
+      "options": [
+        "Lokala AI-modeller på egen hårdvara",
+        "Att sluta använda internet helt",
+        "Återgång till floppydiskar",
+        "Att förbjuda all automation"
+      ],
+      "answer": 0,
+      "explanation": "Lokala/edge-AI-modeller växer snabbt – integritet, kostnad och kontroll driver utvecklingen.",
+      "quip": "Rätt! Framtiden körs delvis lokalt."
+    },
+    {
+      "id": "q4",
+      "type": "timed-bonus",
+      "time": 12,
+      "prompt": "Snabbt! Vad kallas AI som kan skapa nytt innehåll (text, bild, kod)?",
+      "options": ["Generativ AI", "Defensiv AI", "Statisk AI", "Passiv AI"],
+      "answer": 0,
+      "explanation": "Generativ AI skapar nytt innehåll – som det här spelet delvis byggdes med.",
+      "quip": "Bonus! ⚡ Snabb som framtiden."
+    },
+    {
+      "id": "q5",
+      "type": "true-false",
+      "prompt": "Det är klokt att förstå både möjligheterna OCH riskerna med ny teknik innan man använder den brett.",
+      "answer": true,
+      "explanation": "Ansvarsfull teknikanvändning väger nytta mot risk – särskilt med kraftfull AI.",
+      "quip": "Sant – kloka byggare tänker efter."
+    },
+    {
+      "id": "q6",
+      "type": "mini-challenge",
+      "prompt": "Avsluta meningen med ett ord: Den bästa förmågan inför framtiden är att vara ____ och vilja lära nytt.",
+      "accept": ["nyfiken", "nyfikenhet"],
+      "explanation": "Nyfikenhet är drivkraften som gör att man hänger med när allt förändras.",
+      "quip": "Kodlegend i vardande! 👑 Nu väntar bastun..."
+    }
+  ]
+}

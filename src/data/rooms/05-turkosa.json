@@ -1,0 +1,73 @@
+{
+  "id": "turkosa",
+  "order": 5,
+  "title": "Turkosa",
+  "theme": {
+    "color": "#2ec4b6",
+    "accent": "#cbf3f0",
+    "icon": "🎨",
+    "background": "waves",
+    "music": "turkosa",
+    "atmosphere": "Allt skimrar i turkost. Frontend, design och färg i fokus."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "Vilken CSS-egenskap ändrar färgen på själva texten i ett element?",
+      "options": ["background-color", "color", "font-size", "border"],
+      "answer": 1,
+      "explanation": "'color' styr textfärgen; 'background-color' styr bakgrunden.",
+      "quip": "Rätt! Klassiskt nybörjarminfält – men inte för dig."
+    },
+    {
+      "id": "q2",
+      "type": "true-false",
+      "prompt": "Hex-koden #40E0D0 motsvarar ungefär färgen turkos.",
+      "answer": true,
+      "explanation": "#40E0D0 är just webbfärgen 'turquoise'.",
+      "quip": "Korrekt – passande för det här rummet!"
+    },
+    {
+      "id": "q3",
+      "type": "fill-missing-line",
+      "prompt": "Fyll i raden som ger boxen en turkos bakgrund.",
+      "code": ".box {\n  ___\n  padding: 1rem;\n}",
+      "options": ["background: turquoise;", "color: turquoise;", "border-turquoise: 1;", "turquoise: true;"],
+      "answer": 0,
+      "explanation": "'background: turquoise;' sätter bakgrundsfärgen.",
+      "quip": "Snyggt – nu lyser den turkost."
+    },
+    {
+      "id": "q4",
+      "type": "match",
+      "prompt": "Matcha CSS-egenskapen med vad den gör.",
+      "pairs": [
+        { "term": "display: flex", "match": "Skapar en flexibel layout" },
+        { "term": "border-radius", "match": "Rundar hörnen" },
+        { "term": "opacity", "match": "Styr genomskinlighet" },
+        { "term": "margin", "match": "Yttre avstånd runt elementet" }
+      ],
+      "explanation": "flex = layout, border-radius = rundade hörn, opacity = genomskinlighet, margin = yttre marginal.",
+      "quip": "Perfekt matchat!"
+    },
+    {
+      "id": "q5",
+      "type": "mini-challenge",
+      "prompt": "Vilket värde på CSS-egenskapen 'display' gör att ett element försvinner helt och INTE tar upp någon plats?",
+      "accept": ["none", "display: none", "none;"],
+      "explanation": "'display: none;' tar bort elementet ur flödet helt (till skillnad från visibility: hidden).",
+      "quip": "Rätt – nu syns det inte alls."
+    },
+    {
+      "id": "q6",
+      "type": "timed-bonus",
+      "time": 12,
+      "prompt": "Snabbt! Vilken enhet är relativ till rotelementets typsnittsstorlek?",
+      "options": ["px", "rem", "cm", "pt"],
+      "answer": 1,
+      "explanation": "'rem' är relativ till root-elementets font-size; 'px' är absolut.",
+      "quip": "Bonus säkrad! ⚡"
+    }
+  ]
+}

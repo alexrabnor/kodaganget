@@ -1,0 +1,94 @@
+{
+  "id": "jwt",
+  "order": 2,
+  "title": "JWT – Jösses, Vilka Tecken!?",
+  "theme": {
+    "color": "#7b5cff",
+    "accent": "#ffd23f",
+    "icon": "🔐",
+    "background": "tokens",
+    "music": "jwt",
+    "atmosphere": "Flygande tokens, lås och nycklar överallt."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "Vilken HTTP-metod används vanligtvis när en klientapp skickar inloggningsuppgifter till en auth-server?",
+      "options": ["GET", "POST", "DELETE", "OPTIONS"],
+      "answer": 1,
+      "explanation": "Inloggningsuppgifter skickas i kroppen av en POST – inte i URL:en som vid GET.",
+      "quip": "Rätt! Lösenord i en GET-URL hade fått säkerhetsteamet att gråta."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Vilka tre delar består en JSON Web Token (JWT) av?",
+      "options": [
+        "Username, Password, Database-ID",
+        "Request, Response, Statuscode",
+        "Header, Payload, Signature",
+        "Encryption, Decryption, Salt"
+      ],
+      "answer": 2,
+      "explanation": "En JWT = Header.Payload.Signature, åtskilda av punkter.",
+      "quip": "Korrekt – tre delar, två punkter, noll krångel."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "prompt": "Vad är syftet med signaturen (Signature) i en JWT?",
+      "options": [
+        "Att dölja payloaden så att användaren inte kan läsa sin egen data.",
+        "Att verifiera att token är äkta och inte har manipulerats eller ändrats på vägen.",
+        "Att spara användarens lösenord i krypterat format.",
+        "Att automatiskt skicka vidare användaren till nästa sida."
+      ],
+      "answer": 1,
+      "explanation": "Signaturen verifierar äkthet och integritet – inte sekretess. Payloaden är bara base64-kodad.",
+      "quip": "Rätt! Signaturen är token-ens äkthetsstämpel."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "prompt": "Varför är en Access Token så pass känslig om den hamnar i fel händer?",
+      "options": [
+        "Eftersom den innehåller användarens lösenord i klartext.",
+        "Eftersom den ger direkt tillgång till systemets skyddade resurser utan att angriparen behöver veta lösenordet.",
+        "Eftersom den raderar hela databasen om den blir stulen.",
+        "Eftersom den bara fungerar om man har tillgång till autentiseringsserverns fysiska hårddisk."
+      ],
+      "answer": 1,
+      "explanation": "En access token är en nyckel till skyddade resurser – stjäls den behövs inget lösenord.",
+      "quip": "Just det – behandla den som kontanter."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "prompt": "Vad är den huvudsakliga uppgiften för en Refresh Token?",
+      "options": [
+        "Att uppdatera hemsidans design och ladda om webbläsaren.",
+        "Att kryptera databasanropen mellan API:et och servern.",
+        "Att användas på ett säkert sätt för att hämta en ny Access Token när den gamla har gått ut.",
+        "Att kontrollera om användaren har betalat sin månadsfaktura."
+      ],
+      "answer": 2,
+      "explanation": "Refresh-token används för att hämta en ny access-token utan att logga in på nytt.",
+      "quip": "Rätt! Slipp logga in om och om igen."
+    },
+    {
+      "id": "q6",
+      "type": "multiple-choice",
+      "prompt": "Om vi använder plånboks- och bankvalvsliknelsen för tokens, vilket påstående är rätt?",
+      "options": [
+        "Access token är bankvalvet (lång livslängd/säker), och refresh token är plånboken (kort livslängd/snabb).",
+        "Lösenordet är plånboken, och din Access token är bankvalvet.",
+        "Access token är plånboken (används för direkt åtkomst/kort livslängd), och refresh token är bankvalvet (säker förvaring för att hämta nya pengar).",
+        "Både Access token och Refresh token fungerar exakt som ett bankvalv och har ingen skillnad i säkerhet."
+      ],
+      "answer": 2,
+      "explanation": "Access = plånboken (kort livslängd, daglig användning), refresh = bankvalvet (säker, hämtar nytt).",
+      "quip": "Token Master! 🔑 Du tappar aldrig plånboken."
+    }
+  ]
+}

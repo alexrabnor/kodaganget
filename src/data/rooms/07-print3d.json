@@ -1,0 +1,75 @@
+{
+  "id": "print3d",
+  "order": 7,
+  "title": "3D Printing – Från digitalt till fysiskt",
+  "theme": {
+    "color": "#f25f5c",
+    "accent": "#ffe066",
+    "icon": "🖨️",
+    "background": "printer",
+    "music": "print3d",
+    "atmosphere": "En 3D-skrivare bygger objekt lager för lager."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "Vilket filformat är absolut vanligast för 3D-modeller som ska skrivas ut?",
+      "options": [".docx", ".stl", ".mp3", ".css"],
+      "answer": 1,
+      "explanation": "STL beskriver modellens yta som trianglar och är standard för 3D-utskrift.",
+      "quip": "Rätt! STL = Standard Triangle Language."
+    },
+    {
+      "id": "q2",
+      "type": "true-false",
+      "prompt": "En 'slicer' omvandlar 3D-modellen till instruktioner (G-code) som skrivaren förstår.",
+      "answer": true,
+      "explanation": "Slicern delar upp modellen i lager och genererar G-code för skrivaren.",
+      "quip": "Korrekt – utan slicer ingen utskrift."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "prompt": "Vad kallas den vanligaste tekniken där smält plast läggs ut lager på lager?",
+      "options": [
+        "FDM (Fused Deposition Modeling)",
+        "JPEG-komprimering",
+        "RAID-spegling",
+        "OCR-skanning"
+      ],
+      "answer": 0,
+      "explanation": "FDM smälter filament och bygger objektet lager för lager.",
+      "quip": "Rätt! Lager på lager, tålamod på tålamod."
+    },
+    {
+      "id": "q4",
+      "type": "match",
+      "prompt": "Matcha 3D-print-begreppet med rätt förklaring.",
+      "pairs": [
+        { "term": "Filament", "match": "Plasttråden som matas in" },
+        { "term": "Slicer", "match": "Program som skapar G-code" },
+        { "term": "Bädd (bed)", "match": "Ytan modellen byggs på" },
+        { "term": "Infill", "match": "Hur tätt objektet fylls inuti" }
+      ],
+      "explanation": "Filament = material, slicer = mjukvara, bädd = byggyta, infill = inre fyllnadsgrad.",
+      "quip": "Allt på plats!"
+    },
+    {
+      "id": "q5",
+      "type": "true-false",
+      "prompt": "Ju högre 'infill' (fyllnadsgrad), desto starkare men också tyngre och långsammare blir utskriften.",
+      "answer": true,
+      "explanation": "Mer infill = starkare och tyngre objekt, men mer material och längre tid.",
+      "quip": "Rätt – 100% infill = sten, och evig väntan."
+    },
+    {
+      "id": "q6",
+      "type": "mini-challenge",
+      "prompt": "Vilket filformat exporterar man oftast sin modell till inför en 3D-utskrift? (skriv tilläggets namn)",
+      "accept": ["stl", ".stl"],
+      "explanation": "STL är de facto-standarden för utskriftsklara modeller.",
+      "quip": "Korrekt – nu är det bara att skriva ut."
+    }
+  ]
+}

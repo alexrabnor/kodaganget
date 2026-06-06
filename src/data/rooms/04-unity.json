@@ -1,0 +1,94 @@
+{
+  "id": "unity",
+  "order": 4,
+  "title": "C# och Unity – Spelprogrammering",
+  "theme": {
+    "color": "#e8702a",
+    "accent": "#ffd23f",
+    "icon": "🧊",
+    "background": "cubes",
+    "music": "unity",
+    "atmosphere": "Kuber, spelkontroller och en 3D-miljö som väntar."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "Vilket programmeringsspråk används primärt för att skriva skript och logik i Unity?",
+      "options": ["C+", "C# (C-sharp)", "Python", "HTML5"],
+      "answer": 1,
+      "explanation": "Unity använder C# för spel-logik och skript.",
+      "quip": "Rätt! C# – skarpt val."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Vad är den huvudsakliga uppgiften för applikationen Unity Hub?",
+      "options": [
+        "Att sälja färdiga spel direkt till konsumenter.",
+        "Att hantera dina olika Unity-installationer, licenser och projekt på ett och samma ställe.",
+        "Att automatiskt skriva C#-kod åt dig med hjälp av AI.",
+        "Att designa 3D-modeller från grunden."
+      ],
+      "answer": 1,
+      "explanation": "Unity Hub hanterar installationer, licenser och projekt – din centrala startpunkt.",
+      "quip": "Korrekt – navet i Unity-världen."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "prompt": "Hur laddar du enklast ner färdiga 3D-modeller och ljud till ditt Unity-projekt?",
+      "options": [
+        "Genom att köpa dem inuti Steam-klienten.",
+        "Genom att använda Unity Asset Store.",
+        "Genom att söka i Windows kontrollpanel.",
+        "Det går inte, man måste göra allt helt själv i Unity."
+      ],
+      "answer": 1,
+      "explanation": "Unity Asset Store är fylld med modeller, ljud och paket – gratis och betalt.",
+      "quip": "Rätt! Varför rita ett träd när någon redan gjort 200?"
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "prompt": "Var ska du leta om du glömt bort hur en specifik Unity-funktion kodas eller fungerar?",
+      "options": [
+        "I Steams community-forum för spelet Kungen.",
+        "I Unitys officiella dokumentation (Unity Documentation).",
+        "I Photoshop under fliken för bildimport.",
+        "I Unity Hubs installationsmeny."
+      ],
+      "answer": 1,
+      "explanation": "Unitys officiella dokumentation är facit för API och funktioner.",
+      "quip": "Korrekt – docs är en kodares bästa vän."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "prompt": "Vilken komponent i Unity används oftast som bas för att skapa en visuell statusbar (t.ex. en Health Bar)?",
+      "options": [
+        "En UI-bild (Image) i en Canvas, där man ändrar \"Fill Amount\" via kod.",
+        "Ett tomt 3D-objekt (Empty Game Object) utan grafik.",
+        "En ljuskälla (Directional Light).",
+        "En ljudkälla (Audio Source)."
+      ],
+      "answer": 0,
+      "explanation": "En Image i en Canvas med 'Fill Amount' är standardsättet att bygga en health bar.",
+      "quip": "Rätt! Fill Amount från 1 till 0 = aj, aj, aj."
+    },
+    {
+      "id": "q6",
+      "type": "multiple-choice",
+      "prompt": "Vad behöver du göra i Unity innan du kan ladda upp och publicera ditt färdiga spel på Steam?",
+      "options": [
+        "Exportera alla bilder som textfiler.",
+        "Bygga/kompilera projektet (Build) till en körbar fil anpassad för operativsystemet.",
+        "Avinstallera Unity Hub från din dator.",
+        "Ta bort alla C#-skript så att spelet laddar snabbare."
+      ],
+      "answer": 1,
+      "explanation": "Du måste bygga (Build) projektet till en körbar fil för rätt OS innan publicering.",
+      "quip": "Unity Wizard! 🧊 Bygget kompilerade utan ett enda fel."
+    }
+  ]
+}

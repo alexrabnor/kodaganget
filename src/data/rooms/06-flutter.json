@@ -1,0 +1,72 @@
+{
+  "id": "flutter",
+  "order": 6,
+  "title": "Spelkontroller i Flutter",
+  "theme": {
+    "color": "#1389fd",
+    "accent": "#54c5f8",
+    "icon": "📱",
+    "background": "mobile",
+    "music": "flutter",
+    "atmosphere": "Mobiler, appar och mjuka animationer överallt."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "Vilket programmeringsspråk används för att bygga appar i Flutter?",
+      "options": ["Dart", "Swift", "Kotlin", "JavaScript"],
+      "answer": 0,
+      "explanation": "Flutter använder Dart, utvecklat av Google.",
+      "quip": "Rätt på pricken – Dart i prick!"
+    },
+    {
+      "id": "q2",
+      "type": "true-false",
+      "prompt": "Med Flutter kan du bygga appar för både iOS och Android från en och samma kodbas.",
+      "answer": true,
+      "explanation": "Flutter är cross-platform – en kodbas, flera plattformar.",
+      "quip": "Korrekt – skriv en gång, kör överallt."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "prompt": "Vad är den grundläggande byggstenen för allt UI i Flutter?",
+      "options": ["Komponenter (Components)", "Widgets", "Fragments", "Views"],
+      "answer": 1,
+      "explanation": "I Flutter är 'allt en widget' – knappar, text, layout, padding ...",
+      "quip": "Rätt! Widgets hela vägen ner."
+    },
+    {
+      "id": "q4",
+      "type": "match",
+      "prompt": "Matcha Flutter-widgeten med dess uppgift.",
+      "pairs": [
+        { "term": "Column", "match": "Staplar barn vertikalt" },
+        { "term": "Row", "match": "Staplar barn horisontellt" },
+        { "term": "GestureDetector", "match": "Fångar tryck och gester" },
+        { "term": "Scaffold", "match": "Grundstruktur för en skärm" }
+      ],
+      "explanation": "Column = vertikalt, Row = horisontellt, GestureDetector = tryck/gester, Scaffold = skärm-struktur.",
+      "quip": "Snyggt staplat!"
+    },
+    {
+      "id": "q5",
+      "type": "fill-missing-line",
+      "prompt": "Fyll i raden som behövs i en enkel build-metod.",
+      "code": "Widget build(BuildContext context) {\n  ___\n}",
+      "options": ["return Center(child: Text('Hej'));", "console.log('Hej');", "print Center;", "<div>Hej</div>"],
+      "answer": 0,
+      "explanation": "build() returnerar en widget, t.ex. Center(child: Text(...)).",
+      "quip": "Rätt – nu renderas något på skärmen."
+    },
+    {
+      "id": "q6",
+      "type": "mini-challenge",
+      "prompt": "Vilken widget används vanligtvis för att fånga upp ett tryck/tap där det annars inte finns en knapp? (skriv namnet)",
+      "accept": ["GestureDetector", "gesturedetector"],
+      "explanation": "GestureDetector lindar in valfri widget och fångar tap, drag, swipe m.m.",
+      "quip": "Flutter Hero! 📱"
+    }
+  ]
+}

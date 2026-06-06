@@ -1,0 +1,82 @@
+{
+  "id": "bugg",
+  "order": 9,
+  "title": "Min sämsta bugg",
+  "theme": {
+    "color": "#ef4b4b",
+    "accent": "#ffd23f",
+    "icon": "🐛",
+    "background": "glitch",
+    "music": "bugg",
+    "atmosphere": "Något kryper i koden. Dags att jaga buggar."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "Vad kallas en bugg som bara dyker upp ibland och är svår att återskapa?",
+      "options": [
+        "En syntaxbugg",
+        "En intermittent bugg (ibland kallad 'Heisenbug')",
+        "En kompileringsbugg",
+        "En importbugg"
+      ],
+      "answer": 1,
+      "explanation": "Intermittenta buggar (Heisenbugs) ändrar beteende när man försöker observera dem – mardrömmen.",
+      "quip": "Rätt! De värsta att jaga."
+    },
+    {
+      "id": "q2",
+      "type": "fill-missing-line",
+      "prompt": "Det finns en klassisk bugg här. Välj raden som FIXAR villkoret.",
+      "code": "let x = 3;\n___ {\n  console.log('x är fem');\n}",
+      "options": ["if (x === 5)", "if (x = 5)", "if x == 5", "when (x: 5)"],
+      "answer": 0,
+      "explanation": "'if (x = 5)' tilldelar i stället för att jämföra. Använd '===' för strikt jämförelse.",
+      "quip": "Rätt! Ett extra likhetstecken har sänkt fler projekt än man tror."
+    },
+    {
+      "id": "q3",
+      "type": "true-false",
+      "prompt": "console.log() är ett helt legitimt och vanligt sätt att felsöka JavaScript.",
+      "answer": true,
+      "explanation": "Print-debugging är gammalt men effektivt – proffs gör det också.",
+      "quip": "Sant – ingen skam i en bra console.log."
+    },
+    {
+      "id": "q4",
+      "type": "code-puzzle",
+      "prompt": "Lägg felsökningsstegen i en rimlig ordning – uppifrån och ner.",
+      "lines": [
+        "1. Återskapa buggen",
+        "2. Isolera var i koden det händer",
+        "3. Formulera en hypotes om orsaken",
+        "4. Testa en fix",
+        "5. Verifiera att buggen är borta"
+      ],
+      "explanation": "Återskapa → isolera → hypotes → fix → verifiera är ett klassiskt felsökningsflöde.",
+      "quip": "Snyggt! Metodisk buggjakt vinner."
+    },
+    {
+      "id": "q5",
+      "type": "match",
+      "prompt": "Matcha felet med vad det brukar betyda.",
+      "pairs": [
+        { "term": "SyntaxError", "match": "Koden är felskriven" },
+        { "term": "Off-by-one", "match": "Loopar ett steg för långt/kort" },
+        { "term": "Infinite loop", "match": "Loop som aldrig avslutas" },
+        { "term": "Null/undefined", "match": "Saknat värde används" }
+      ],
+      "explanation": "Klassiska buggtyper varje utvecklare lär sig (den hårda vägen).",
+      "quip": "Alla rätt – du känner igen fienderna."
+    },
+    {
+      "id": "q6",
+      "type": "mini-challenge",
+      "prompt": "Vilken operator använder du i JavaScript för STRIKT likhet (värde OCH typ)?",
+      "accept": ["===", "strikt likhet"],
+      "explanation": "'===' jämför både värde och typ; '==' gör typkonvertering och ställer ofta till det.",
+      "quip": "Bug Hunter! 🐛 Buggen är utrotad."
+    }
+  ]
+}

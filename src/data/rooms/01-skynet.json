@@ -1,0 +1,99 @@
+{
+  "id": "skynet",
+  "order": 1,
+  "title": "Den lilla vägen till Skynet",
+  "theme": {
+    "color": "#1e90ff",
+    "accent": "#00ffd0",
+    "icon": "🤖",
+    "background": "neon",
+    "music": "skynet",
+    "atmosphere": "Blå neon, AI-effekter och avlägsna robotljud."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "Vilken är den primära skillnaden mellan en Large Language Model (LLM) och en Small Language Model (SLM)?",
+      "options": [
+        "LLM:er har färre parametrar men är snabbare, medan SLM:er kräver molnbaserade GPU-kluster.",
+        "LLM:er kräver enorm beräkningskraft i molnet, medan SLM:er är optimerade för att kunna köras lokalt på konsumenthårdvara.",
+        "LLM:er kan bara hantera text, medan SLM:er är helt autonoma och kan styra fysiska robotar direkt.",
+        "Det finns ingen funktionell skillnad förutom att de är utvecklade av olika företag."
+      ],
+      "answer": 1,
+      "explanation": "SLM:er är mindre och optimerade för lokal körning, medan LLM:er normalt behöver kraftfulla molnresurser.",
+      "quip": "Precis! Det där hade till och med ChatGPT svarat rätt på."
+    },
+    {
+      "id": "q2",
+      "type": "multiple-choice",
+      "prompt": "Vad gör ramverket llama.cpp så betydelsefullt för lokal körning av AI-modeller?",
+      "options": [
+        "Det omvandlar Python-kod till JavaScript så att modeller kan köras direkt i webbläsaren.",
+        "Det är en molntjänst som hyr ut GPU-kapacitet till företag som utvecklar SLM:er.",
+        "Det tillåter effektiv exekvering på vanlig CPU-hårdvara och Mac-datorer genom tekniker som kvantisering.",
+        "Det ersätter behovet av operativsystem som Linux och Windows när man kör robotar."
+      ],
+      "answer": 2,
+      "explanation": "llama.cpp gör det möjligt att köra modeller effektivt på vanlig CPU/Mac tack vare bl.a. kvantisering.",
+      "quip": "Snyggt – ingen dyr GPU krävdes för det svaret."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "prompt": "Hur förenklar verktyget Ollama processen att arbeta med lokala språkmodeller?",
+      "options": [
+        "Det fungerar som en pakethanterare som gör det enkelt att ladda ner och köra modeller med enkla terminalkommandon.",
+        "Det översätter automatiskt alla engelska modeller till svenska i realtid.",
+        "Det är ett grafiskt ritverktyg för att designa neurala nätverk.",
+        "Det ansluter automatiskt lokala modeller till GPT-4 när datorns batteri är lågt."
+      ],
+      "answer": 0,
+      "explanation": "Ollama är som en pakethanterare för modeller – 'ollama run ...' så är du igång.",
+      "quip": "Rätt! En kommandorad och vips, en modell."
+    },
+    {
+      "id": "q4",
+      "type": "multiple-choice",
+      "prompt": "Vad är syftet med ett \"model card\" för en specifik AI-modell som t.ex. Microsoft Phi-4?",
+      "options": [
+        "Det är ett kreditkort som används för att betala för modellens API-anrop.",
+        "Det är en teknisk specifikation som beskriver modellens arkitektur, träningsdata, prestanda och begränsningar.",
+        "Det är en hårdvarukomponent som man måste sätta in i datorn för att modellen ska starta.",
+        "Det är en licens som ger användaren ensamrätt på att sälja modellen vidare."
+      ],
+      "answer": 1,
+      "explanation": "Ett model card dokumenterar modellens arkitektur, träningsdata, prestanda och begränsningar.",
+      "quip": "Korrekt – läs alltid det finstilta i model card:et."
+    },
+    {
+      "id": "q5",
+      "type": "multiple-choice",
+      "prompt": "Hur skiljer sig traditionell GOFAI (Good Old-Fashioned AI) från moderna neurala nätverk?",
+      "options": [
+        "GOFAI använder laser för att se världen, medan neurala nätverk bara använder kameror.",
+        "Neurala nätverk kräver ingen ström, till skillnad från GOFAI-system.",
+        "GOFAI bygger på pre-definierade, logiska \"om-då\"-regler, medan neurala nätverk lär sig mönster autonomt från stora mängder data.",
+        "GOFAI är mycket smartare och har helt ersatt neurala nätverk i moderna självkörande bilar."
+      ],
+      "answer": 2,
+      "explanation": "GOFAI bygger på handskrivna logiska regler; neurala nätverk lär sig mönster från data.",
+      "quip": "Rätt! Om-då-regler i all ära, men data vann."
+    },
+    {
+      "id": "q6",
+      "type": "multiple-choice",
+      "prompt": "Vilken funktion fyller LiDAR-sensorn i en självkörande bil i kombination med ett neuralt nätverk?",
+      "options": [
+        "LiDAR-sensorn mäter bilens oljetryck och det neurala nätverket bestämmer när det är dags för service.",
+        "LiDAR skapar en 3D-punktmolnskarta av omgivningen med laser, som det neurala nätverket sedan analyserar i realtid för att fatta körbeslut.",
+        "LiDAR skickar radiosignaler till andra bilar så att de kan prata med varandra via ett dolt nätverk.",
+        "LiDAR-sensorn används bara för att spela upp musik utanför bilen med hjälp av ljusvågor."
+      ],
+      "answer": 1,
+      "explanation": "LiDAR bygger ett 3D-punktmoln med laser som nätverket analyserar i realtid för körbeslut.",
+      "quip": "Combo! Skynet nickar motvilligt godkännande."
+    }
+  ]
+}

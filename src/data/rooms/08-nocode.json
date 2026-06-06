@@ -1,0 +1,80 @@
+{
+  "id": "nocode",
+  "order": 8,
+  "title": "Jag kan inte koda… ändå byggde jag en app",
+  "theme": {
+    "color": "#9b5de5",
+    "accent": "#f15bb5",
+    "icon": "✨",
+    "background": "sparkles",
+    "music": "nocode",
+    "atmosphere": "Idéer blir appar – med lite hjälp av AI och no-code."
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple-choice",
+      "prompt": "Vad menas med 'no-code'?",
+      "options": [
+        "Att bygga appar och hemsidor utan att skriva traditionell kod, ofta via visuella verktyg.",
+        "Att radera all kod i ett projekt.",
+        "Ett programmeringsspråk som bara använder siffror.",
+        "Ett sätt att stänga av internet."
+      ],
+      "answer": 0,
+      "explanation": "No-code låter dig bygga appar visuellt utan att skriva kod för hand.",
+      "quip": "Rätt! Idé in, app ut."
+    },
+    {
+      "id": "q2",
+      "type": "true-false",
+      "prompt": "Med AI-verktyg som Claude kan man bygga fungerande appar även utan djup programmeringsbakgrund.",
+      "answer": true,
+      "explanation": "AI sänker tröskeln rejält – beskriv vad du vill ha så hjälper den dig hela vägen.",
+      "quip": "Korrekt – och du bevisar det just nu."
+    },
+    {
+      "id": "q3",
+      "type": "multiple-choice",
+      "prompt": "Vad är en 'prompt' i sammanhanget AI-verktyg?",
+      "options": [
+        "En instruktion eller fråga du ger till AI:n.",
+        "En typ av databas.",
+        "En knapp i operativsystemet.",
+        "Ett felmeddelande."
+      ],
+      "answer": 0,
+      "explanation": "En prompt är din instruktion/fråga till modellen – ju tydligare, desto bättre svar.",
+      "quip": "Rätt! Bra prompt, bra resultat."
+    },
+    {
+      "id": "q4",
+      "type": "true-false",
+      "prompt": "Att kunna beskriva tydligt VAD du vill ha är ofta viktigare än att kunna varje kodrad, när man bygger med AI.",
+      "answer": true,
+      "explanation": "Tydlig kravbild och kommunikation är guld värt i AI-assisterad utveckling.",
+      "quip": "Sant – kommunikation är en superkraft."
+    },
+    {
+      "id": "q5",
+      "type": "match",
+      "prompt": "Matcha verktyget/begreppet med vad det är.",
+      "pairs": [
+        { "term": "Claude", "match": "AI-assistent som hjälper dig koda" },
+        { "term": "No-code", "match": "Bygga utan att skriva kod" },
+        { "term": "Prompt", "match": "Instruktion till AI:n" },
+        { "term": "Iteration", "match": "Förbättra steg för steg" }
+      ],
+      "explanation": "Claude = AI-assistent, no-code = visuellt byggande, prompt = instruktion, iteration = stegvis förbättring.",
+      "quip": "Allt matchar!"
+    },
+    {
+      "id": "q6",
+      "type": "mini-challenge",
+      "prompt": "Fyll i ordet: Att förbättra något steg för steg, om och om igen, kallas att ____.",
+      "accept": ["iterera", "iteration", "itererar"],
+      "explanation": "Att iterera = att förbättra i upprepade omgångar.",
+      "quip": "Rätt! Lite bättre varje varv."
+    }
+  ]
+}
