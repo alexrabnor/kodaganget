@@ -61,7 +61,9 @@ function computeStars(correct, total) {
 function reducer(state, action) {
   switch (action.type) {
     case "HYDRATE":
-      return { ...initialState, ...action.payload, toasts: [] };
+      // Återställ framsteg men landa alltid på startsidan (inte där man slutade).
+      // "Fortsätt"-knappen tar spelaren vidare till huset.
+      return { ...initialState, ...action.payload, view: "intro", currentRoomId: null, toasts: [] };
 
     case "RESET":
       return { ...initialState };
