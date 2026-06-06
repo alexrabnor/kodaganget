@@ -199,7 +199,7 @@ button {
 .house {
   position: relative;
   width: min(92vw, 760px);
-  margin: 0 auto;
+  margin: 64px auto 0; /* utrymme för taket som sticker upp ovanför huset */
   background: linear-gradient(180deg, var(--solhem-yellow), var(--solhem-yellow-deep));
   border-radius: 18px;
   padding: 2.4rem 1.4rem 1.4rem;
